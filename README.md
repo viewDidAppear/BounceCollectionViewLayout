@@ -1,7 +1,9 @@
 # BounceCollectionViewLayout
 `UICollectionViewFlowLayout` with `UIDynamicAnimator`
 
-# Blog Post:
+# Blog Post
+
+https://toplayoutguide.github.io/2021/10/18/dynamic-animator/
 
 # Notes:
 
