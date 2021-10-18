@@ -83,9 +83,8 @@ final class BounceCollectionViewLayout: UICollectionViewFlowLayout {
                 behaviour.frictionTorque = 0.0
 
                 if !touchLocation.equalTo(.zero) {
-                    let scrollResistance = computeScrollResistance(from: touchLocation, anchorPoint: behaviour.anchorPoint)
                     guard let item = behaviour.items.first as? UICollectionViewLayoutAttributes else { return }
-
+                    let scrollResistance = computeScrollResistance(from: touchLocation, anchorPoint: behaviour.anchorPoint)
                     var center = item.center
                     center.y += latestDelta < 0 ? max(latestDelta, latestDelta * scrollResistance) : min(latestDelta, latestDelta * scrollResistance)
                     item.center = center
