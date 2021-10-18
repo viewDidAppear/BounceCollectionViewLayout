@@ -7,26 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00934CB0271DB63600DB4735 /* BounceCollectionViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00934CA7271DB63600DB4735 /* BounceCollectionViewLayout.framework */; };
-		00934CB5271DB63600DB4735 /* BounceCollectionViewLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00934CB4271DB63600DB4735 /* BounceCollectionViewLayoutTests.swift */; };
 		00934CB6271DB63600DB4735 /* BounceCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 00934CAA271DB63600DB4735 /* BounceCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00934CC0271DB64400DB4735 /* BounceCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00934CBF271DB64400DB4735 /* BounceCollectionViewLayout.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		00934CB1271DB63600DB4735 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 00934C9E271DB63600DB4735 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 00934CA6271DB63600DB4735;
-			remoteInfo = BounceCollectionViewLayout;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00934CA7271DB63600DB4735 /* BounceCollectionViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BounceCollectionViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00934CAA271DB63600DB4735 /* BounceCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BounceCollectionViewLayout.h; sourceTree = "<group>"; };
-		00934CAF271DB63600DB4735 /* BounceCollectionViewLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BounceCollectionViewLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		00934CB4271DB63600DB4735 /* BounceCollectionViewLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceCollectionViewLayoutTests.swift; sourceTree = "<group>"; };
+		00934CBF271DB64400DB4735 /* BounceCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceCollectionViewLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,14 +25,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		00934CAC271DB63600DB4735 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00934CB0271DB63600DB4735 /* BounceCollectionViewLayout.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -52,7 +32,6 @@
 			isa = PBXGroup;
 			children = (
 				00934CA9271DB63600DB4735 /* BounceCollectionViewLayout */,
-				00934CB3271DB63600DB4735 /* BounceCollectionViewLayoutTests */,
 				00934CA8271DB63600DB4735 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +40,6 @@
 			isa = PBXGroup;
 			children = (
 				00934CA7271DB63600DB4735 /* BounceCollectionViewLayout.framework */,
-				00934CAF271DB63600DB4735 /* BounceCollectionViewLayoutTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,16 +48,9 @@
 			isa = PBXGroup;
 			children = (
 				00934CAA271DB63600DB4735 /* BounceCollectionViewLayout.h */,
+				00934CBF271DB64400DB4735 /* BounceCollectionViewLayout.swift */,
 			);
 			path = BounceCollectionViewLayout;
-			sourceTree = "<group>";
-		};
-		00934CB3271DB63600DB4735 /* BounceCollectionViewLayoutTests */ = {
-			isa = PBXGroup;
-			children = (
-				00934CB4271DB63600DB4735 /* BounceCollectionViewLayoutTests.swift */,
-			);
-			path = BounceCollectionViewLayoutTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,24 +85,6 @@
 			productReference = 00934CA7271DB63600DB4735 /* BounceCollectionViewLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		00934CAE271DB63600DB4735 /* BounceCollectionViewLayoutTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 00934CBC271DB63600DB4735 /* Build configuration list for PBXNativeTarget "BounceCollectionViewLayoutTests" */;
-			buildPhases = (
-				00934CAB271DB63600DB4735 /* Sources */,
-				00934CAC271DB63600DB4735 /* Frameworks */,
-				00934CAD271DB63600DB4735 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				00934CB2271DB63600DB4735 /* PBXTargetDependency */,
-			);
-			name = BounceCollectionViewLayoutTests;
-			productName = BounceCollectionViewLayoutTests;
-			productReference = 00934CAF271DB63600DB4735 /* BounceCollectionViewLayoutTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -144,9 +97,7 @@
 				TargetAttributes = {
 					00934CA6271DB63600DB4735 = {
 						CreatedOnToolsVersion = 13.0;
-					};
-					00934CAE271DB63600DB4735 = {
-						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -164,20 +115,12 @@
 			projectRoot = "";
 			targets = (
 				00934CA6271DB63600DB4735 /* BounceCollectionViewLayout */,
-				00934CAE271DB63600DB4735 /* BounceCollectionViewLayoutTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00934CA5271DB63600DB4735 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		00934CAD271DB63600DB4735 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -191,26 +134,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		00934CAB271DB63600DB4735 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00934CB5271DB63600DB4735 /* BounceCollectionViewLayoutTests.swift in Sources */,
+				00934CC0271DB64400DB4735 /* BounceCollectionViewLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		00934CB2271DB63600DB4735 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 00934CA6271DB63600DB4735 /* BounceCollectionViewLayout */;
-			targetProxy = 00934CB1271DB63600DB4735 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		00934CB7271DB63600DB4735 /* Debug */ = {
@@ -338,6 +266,7 @@
 		00934CBA271DB63600DB4735 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -357,6 +286,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +295,7 @@
 		00934CBB271DB63600DB4735 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -384,46 +315,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		00934CBD271DB63600DB4735 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tidbitapps.BounceCollectionViewLayoutTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		00934CBE271DB63600DB4735 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tidbitapps.BounceCollectionViewLayoutTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -446,15 +337,6 @@
 			buildConfigurations = (
 				00934CBA271DB63600DB4735 /* Debug */,
 				00934CBB271DB63600DB4735 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		00934CBC271DB63600DB4735 /* Build configuration list for PBXNativeTarget "BounceCollectionViewLayoutTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				00934CBD271DB63600DB4735 /* Debug */,
-				00934CBE271DB63600DB4735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
